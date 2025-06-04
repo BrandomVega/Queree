@@ -1,0 +1,17 @@
+#Helpers and codes
+helpback
+helpfront
+
+#node
+node_modules
+
+#python 
+__pycache__
+embeddings
+
+#images
+*.jpg
+*.png
+
+#front
+dist*
