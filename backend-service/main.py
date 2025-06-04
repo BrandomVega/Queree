@@ -137,7 +137,7 @@ async def websocket_endpoint(websocket: WebSocket):
             print(f"======"*20)
             response = {"message": f"Running 4/4 vision experts: OCR", "output": str(tasks), "progress":"80"}
             await websocket.send_text(json.dumps(response))            
-            
+            bestScores = bestScores[:10]
             print(f"Enviando a MoE_3: OCR.")
             if tasks.get('MoE_3'):  
                 bestScores = await run_ocr(websocket, bestScores, tasks['MoE_3'])
