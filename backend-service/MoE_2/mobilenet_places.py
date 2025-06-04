@@ -21,12 +21,12 @@ vectors = KeyedVectors.load(embeddig_path + model + '.bin')
 async def run_MoE_2_places(websocket, imagepaths, tasks):
     bestScores = []
     total = len(imagepaths)
+    
     print(f"Loading Model")
-
-    arch = 'resnet18'
     model_file = f'/mobnet_places365.pth.tar'
+    
     path = relative_path+'/MoE_2'+model_file
-    model = models.__dict__[arch](num_classes=365)
+    model = models.__dict__['resnet18'](num_classes=365)
     checkpoint = torch.load(path, map_location='cpu')
     state_dict = {k.replace('module.', ''): v for k, v in checkpoint['state_dict'].items()}
     model.load_state_dict(state_dict)
