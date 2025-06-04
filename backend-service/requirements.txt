@@ -1,0 +1,18 @@
+gensim
+pandas
+scikit-learn
+word2number
+spacy
+en-core-web-md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.7.1/en_core_web_md-3.7.1-py3-none-any.whl
+fastapi
+uvicorn
+opencv-python
+pytesseract
+numpy
+Pillow
+python-Levenshtein
+torch
+torchvision
+ultralytics
+websockets
+pydantic
