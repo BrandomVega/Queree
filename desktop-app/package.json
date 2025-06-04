@@ -1,0 +1,15 @@
+{
+  "name": "queree",
+  "version": "1.0.0",
+  "description": "Queree Graphic User Interface",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "BV",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^36.2.1",
+    "electron-builder": "^26.0.12"
+  }
+}
